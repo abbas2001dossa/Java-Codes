@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:java="http://www.eclipse.org/papyrus/JAVA/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_k-HiMJGdEeyPp6B-Hv6jCw" name="q2">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_lAYzEJGdEeyPp6B-Hv6jCw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mjlrMJGdEeyPp6B-Hv6jCw" name="Hospital">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PGOPkJGiEeyPp6B-Hv6jCw" name="Name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ul7kEJGjEeyPp6B-Hv6jCw" name="location">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_akYfgJGjEeyPp6B-Hv6jCw" name="numberOfDepartments">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nn9qkJGjEeyPp6B-Hv6jCw" name="team" type="_iMI7EJGjEeyPp6B-Hv6jCw" association="_nn5ZIJGjEeyPp6B-Hv6jCw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nn-RoZGjEeyPp6B-Hv6jCw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_7ed68pGjEeyPp6B-Hv6jCw" name="doctors" type="_4WW6gJGjEeyPp6B-Hv6jCw" association="_7ecs0JGjEeyPp6B-Hv6jCw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7efJEJGjEeyPp6B-Hv6jCw" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iMI7EJGjEeyPp6B-Hv6jCw" name="TEAM">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_b7EJIJGkEeyPp6B-Hv6jCw" name="doctors" type="_4WW6gJGjEeyPp6B-Hv6jCw" association="_b7CT8JGkEeyPp6B-Hv6jCw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b7F-UJGkEeyPp6B-Hv6jCw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_A1rawJGlEeyPp6B-Hv6jCw" name="Name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_hwX6MpGlEeyPp6B-Hv6jCw" name="consultant doctor" type="_wy6hwJGkEeyPp6B-Hv6jCw" association="_hwWFAJGlEeyPp6B-Hv6jCw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ut4ScpGlEeyPp6B-Hv6jCw" name="attending physician " type="_ybGAgJGkEeyPp6B-Hv6jCw" association="_ut2dQJGlEeyPp6B-Hv6jCw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qESJwpGoEeyPp6B-Hv6jCw" name="juniordoctors" type="_ertvAJGoEeyPp6B-Hv6jCw" association="_qEQUkJGoEeyPp6B-Hv6jCw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qET-8JGoEeyPp6B-Hv6jCw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0xcQ8JJhEeymxe5s6xSkpA" name="members">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nn5ZIJGjEeyPp6B-Hv6jCw" name="Hospitals team" memberEnd="_nn9qkJGjEeyPp6B-Hv6jCw _nn-4sJGjEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nn71YJGjEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nn8ccJGjEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nn-4sJGjEeyPp6B-Hv6jCw" name="hospital" type="_mjlrMJGdEeyPp6B-Hv6jCw" association="_nn5ZIJGjEeyPp6B-Hv6jCw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4WW6gJGjEeyPp6B-Hv6jCw" name="Doctors">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CD26kJGkEeyPp6B-Hv6jCw" name="NameOfDoctor">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KDnmcJGkEeyPp6B-Hv6jCw" name="Department">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7ecs0JGjEeyPp6B-Hv6jCw" name="Hospitals doctors" memberEnd="_7ed68pGjEeyPp6B-Hv6jCw _7efJEZGjEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7ed68JGjEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7ed68ZGjEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_7efJEZGjEeyPp6B-Hv6jCw" name="hospital" type="_mjlrMJGdEeyPp6B-Hv6jCw" association="_7ecs0JGjEeyPp6B-Hv6jCw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_b7CT8JGkEeyPp6B-Hv6jCw" name="team of doctors" memberEnd="_b7EJIJGkEeyPp6B-Hv6jCw _b7GlYJGkEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_b7DiEJGkEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_b7DiEZGkEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_b7GlYJGkEeyPp6B-Hv6jCw" name="team" type="_iMI7EJGjEeyPp6B-Hv6jCw" association="_b7CT8JGkEeyPp6B-Hv6jCw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wy6hwJGkEeyPp6B-Hv6jCw" name="ConsultantDoctor">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2SFqwJGlEeyPp6B-Hv6jCw" name="SpecialtyofConsultant">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PKXy8ZGmEeyPp6B-Hv6jCw" name="doctors" type="_4WW6gJGjEeyPp6B-Hv6jCw" association="_PKVWsJGmEeyPp6B-Hv6jCw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ybGAgJGkEeyPp6B-Hv6jCw" name="physician">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_77TWAJGlEeyPp6B-Hv6jCw" name="Specialtyofphysician">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_deLPwZGmEeyPp6B-Hv6jCw" name="doctors" type="_4WW6gJGjEeyPp6B-Hv6jCw" association="_deJakJGmEeyPp6B-Hv6jCw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_hwWFAJGlEeyPp6B-Hv6jCw" name="head of team" memberEnd="_hwX6MpGlEeyPp6B-Hv6jCw _hwyw8JGlEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hwX6MJGlEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hwX6MZGlEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_hwyw8JGlEeyPp6B-Hv6jCw" name="team" type="_iMI7EJGjEeyPp6B-Hv6jCw" association="_hwWFAJGlEeyPp6B-Hv6jCw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ut2dQJGlEeyPp6B-Hv6jCw" name="head of team" memberEnd="_ut4ScpGlEeyPp6B-Hv6jCw _ut6HoZGlEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ut4ScJGlEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ut4ScZGlEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ut6HoZGlEeyPp6B-Hv6jCw" name="team" type="_iMI7EJGjEeyPp6B-Hv6jCw" association="_ut2dQJGlEeyPp6B-Hv6jCw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_PKVWsJGmEeyPp6B-Hv6jCw" name="a senior doctor" memberEnd="_PKXy8ZGmEeyPp6B-Hv6jCw _PKaPMJGmEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PKXL4JGmEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PKXy8JGmEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_PKaPMJGmEeyPp6B-Hv6jCw" name="consultant doctor" type="_wy6hwJGkEeyPp6B-Hv6jCw" association="_PKVWsJGmEeyPp6B-Hv6jCw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_deJakJGmEeyPp6B-Hv6jCw" name="a senior doctor" memberEnd="_deLPwZGmEeyPp6B-Hv6jCw _deL20pGmEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_deKosJGmEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_deLPwJGmEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_deL20pGmEeyPp6B-Hv6jCw" name="attending physician " type="_ybGAgJGkEeyPp6B-Hv6jCw" association="_deJakJGmEeyPp6B-Hv6jCw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_v-DrcJGmEeyPp6B-Hv6jCw" name="Resident">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ArkxopGnEeyPp6B-Hv6jCw" name="attendingphysician " type="_ybGAgJGkEeyPp6B-Hv6jCw" association="_ArjjgJGnEeyPp6B-Hv6jCw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MUWyopGnEeyPp6B-Hv6jCw" name="consultantdoctor" type="_wy6hwJGkEeyPp6B-Hv6jCw" association="_MUVkgJGnEeyPp6B-Hv6jCw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lIo5sJGpEeyPp6B-Hv6jCw" name="residencyYear">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5uiuEJGmEeyPp6B-Hv6jCw" name="MedicalStudent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_clWU4JGnEeyPp6B-Hv6jCw" name="attendingphysician " type="_ybGAgJGkEeyPp6B-Hv6jCw" association="_clTRkJGnEeyPp6B-Hv6jCw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_roye4pGnEeyPp6B-Hv6jCw" name="consultantdoctor" type="_wy6hwJGkEeyPp6B-Hv6jCw" aggregation="shared" association="_roxQwJGnEeyPp6B-Hv6jCw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UyDs0JGpEeyPp6B-Hv6jCw" name="yearOfStudy">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ArjjgJGnEeyPp6B-Hv6jCw" name="supervised by" memberEnd="_ArkxopGnEeyPp6B-Hv6jCw _ArlYspGnEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ArkxoJGnEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ArkxoZGnEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ArlYspGnEeyPp6B-Hv6jCw" name="resident" type="_v-DrcJGmEeyPp6B-Hv6jCw" association="_ArjjgJGnEeyPp6B-Hv6jCw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_alI7MJGoEeyPp6B-Hv6jCw" value="5"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MUVkgJGnEeyPp6B-Hv6jCw" name="supervised by" memberEnd="_MUWyopGnEeyPp6B-Hv6jCw _MUXZspGnEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MUWyoJGnEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MUWyoZGnEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_MUXZspGnEeyPp6B-Hv6jCw" name="resident" type="_v-DrcJGmEeyPp6B-Hv6jCw" association="_MUVkgJGnEeyPp6B-Hv6jCw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZpPToJGoEeyPp6B-Hv6jCw" value="5"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_clTRkJGnEeyPp6B-Hv6jCw" name="supervised by" memberEnd="_clWU4JGnEeyPp6B-Hv6jCw _clXjApGnEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_clVt0JGnEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_clVt0ZGnEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_clXjApGnEeyPp6B-Hv6jCw" name="medicalstudent" type="_5uiuEJGmEeyPp6B-Hv6jCw" association="_clTRkJGnEeyPp6B-Hv6jCw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bUWKkJGoEeyPp6B-Hv6jCw" value="5"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_roxQwJGnEeyPp6B-Hv6jCw" name="supervised by" memberEnd="_roye4pGnEeyPp6B-Hv6jCw _roztApGnEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_roye4JGnEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_roye4ZGnEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_roztApGnEeyPp6B-Hv6jCw" name="medicalstudent" type="_5uiuEJGmEeyPp6B-Hv6jCw" association="_roxQwJGnEeyPp6B-Hv6jCw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b6lEIJGoEeyPp6B-Hv6jCw" value="5"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ertvAJGoEeyPp6B-Hv6jCw" name="JuniorDoctors">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5234wpGoEeyPp6B-Hv6jCw" name="doctors" type="_4WW6gJGjEeyPp6B-Hv6jCw" association="_521cgJGoEeyPp6B-Hv6jCw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_525G4ZGoEeyPp6B-Hv6jCw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MnjJgJGpEeyPp6B-Hv6jCw" name="yearOfExperience">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qEQUkJGoEeyPp6B-Hv6jCw" name="junior doctors of the team" memberEnd="_qESJwpGoEeyPp6B-Hv6jCw _qEUmAJGoEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qESJwJGoEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qESJwZGoEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_qEUmAJGoEeyPp6B-Hv6jCw" name="team" type="_iMI7EJGjEeyPp6B-Hv6jCw" association="_qEQUkJGoEeyPp6B-Hv6jCw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_521cgJGoEeyPp6B-Hv6jCw" name="a junior doctor" memberEnd="_5234wpGoEeyPp6B-Hv6jCw _525G4pGoEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5234wJGoEeyPp6B-Hv6jCw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5234wZGoEeyPp6B-Hv6jCw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_525G4pGoEeyPp6B-Hv6jCw" name="juniordoctors" type="_ertvAJGoEeyPp6B-Hv6jCw" association="_521cgJGoEeyPp6B-Hv6jCw"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_B-IQkJGlEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B-Ks0JGlEeyPp6B-Hv6jCw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xfgIsJGpEeyPp6B-Hv6jCw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xfh94JGpEeyPp6B-Hv6jCw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/JAVA/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+    </profileApplication>
+  </uml:Model>
+  <java:JavaClass xmi:id="_3eYh8JGpEeyPp6B-Hv6jCw" base_Classifier="_mjlrMJGdEeyPp6B-Hv6jCw"/>
+  <java:JavaClass xmi:id="_40rmgJGpEeyPp6B-Hv6jCw" base_Classifier="_4WW6gJGjEeyPp6B-Hv6jCw"/>
+  <java:JavaClass xmi:id="_5_zV0JGpEeyPp6B-Hv6jCw" base_Classifier="_iMI7EJGjEeyPp6B-Hv6jCw"/>
+  <java:JavaClass xmi:id="_7EqFEJGpEeyPp6B-Hv6jCw" base_Classifier="_wy6hwJGkEeyPp6B-Hv6jCw"/>
+  <java:JavaClass xmi:id="_8cCuwJGpEeyPp6B-Hv6jCw" base_Classifier="_ybGAgJGkEeyPp6B-Hv6jCw"/>
+  <java:JavaClass xmi:id="_9ZzXgJGpEeyPp6B-Hv6jCw" base_Classifier="_v-DrcJGmEeyPp6B-Hv6jCw"/>
+  <java:JavaClass xmi:id="_-OJlkJGpEeyPp6B-Hv6jCw" base_Classifier="_5uiuEJGmEeyPp6B-Hv6jCw"/>
+  <java:JavaClass xmi:id="__OnkEJGpEeyPp6B-Hv6jCw" base_Classifier="_ertvAJGoEeyPp6B-Hv6jCw"/>
+  <java:JavaProperty xmi:id="_t9CIcJJiEeymxe5s6xSkpA" base_Property="_A1rawJGlEeyPp6B-Hv6jCw"/>
+  <java:JavaProperty xmi:id="_vGSPgJJiEeymxe5s6xSkpA" base_Property="_0xcQ8JJhEeymxe5s6xSkpA"/>
+</xmi:XMI>
